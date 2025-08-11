@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "glackzo";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/glackzo.woff2") format("woff2"),
+    url("../fonts/glackzo.woff") format("woff"),
+    url("../fonts/glackzo.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RobotoSlabRegular.woff2") format("woff2"),
+    url("../fonts/RobotoSlabRegular.woff") format("woff"),
+    url("../fonts/RobotoSlabRegular.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RobotoSlabBold.woff2") format("woff2"),
+    url("../fonts/RobotoSlabBold.woff") format("woff"),
+    url("../fonts/RobotoSlabRegular.eot") format("embedded-opentype");
+}
