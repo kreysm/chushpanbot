@@ -1,51 +1,11 @@
-@media (max-width: 768px) {
-  .container {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-  .header__main-subscribe {
-    max-width: 100%;
-    font-size: 18px;
-    margin-top: 50px;
-  }
-  .header__main-subtitle {
-    font-size: 35px;
-  }
-  .header__main-list ul {
-    flex-direction: column;
-    gap: 16px;
-  }
-  .header__main-list .header__main-list-item::before {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-  }
-  .header__main-button {
-    width: 100%;
-    font-size: 18px;
-  }
-  .header__main-photozone {
-    flex-direction: column;
-    align-items: center;
-  }
-  .kirill-photo {
-    height: 400px;
-    width: auto;
-    margin-bottom: 20px;
-  }
-  .chushpan-photo {
-    position: static;
-    opacity: 0.3;
-    height: 200px;
-  }
-  .header__top-buttonVK,
-  .header__top-buttonBron {
-    width: 150px;
-    height: 45px;
-    font-size: 14px;
-  }
-}
+
 /*--------------------------------------------------------------*/
+body{
+  cursor: url('/images/cursor/main.png') 4 4, auto;
+}
+a:hover{
+    cursor: url('/images/cursor/body.png') 4 4, auto;
+}
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -345,7 +305,6 @@ margin: 50px 0 50px 0;
   text-decoration: none; /* чтобы убрать подчеркивание если это ссылка */
   /* Можно задать padding, фон и т.д., например: */
   padding: 6px;
-  animation: move 1s alternate infinite; 
 }
 .photozone-music {
   display: flex;           
@@ -354,8 +313,8 @@ margin: 50px 0 50px 0;
 }
 .music-added img{
 
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 .music-added{
   display:flex;
@@ -363,9 +322,14 @@ margin: 50px 0 50px 0;
   justify-content: center;
   height: 40px;
   width: 40px;
-  border: 1px solid black;
-  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(53, 51, 51);
   border-radius:40px;
+  position:fixed;
+  right: 40px;        
+  bottom: 40px;       
+  z-index: 1000;      
+  animation: move 1s alternate infinite; 
 }
 
 
@@ -374,5 +338,98 @@ margin: 50px 0 50px 0;
   }
   100%{
     transform: scale(1.2);
+  }
+}
+
+
+/*-------------------------------------------------------------*/
+.main .container {
+  padding-top: 90px;
+  min-height:100vh;
+}
+.main {
+  background-color: #242527;
+  display: flex;
+  justify-content: space-between;
+}
+.buttonlist{
+  padding-top: 90px;
+  display: flex;          
+  flex-direction: row;    
+  align-items: flex-start; 
+  gap: 20px;         
+  position: relative;     
+}
+.main__title {
+font-weight: 700;
+font-size: 75px;
+line-height: 109%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+}
+.main__subtitle {
+  line-height: 109%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 35px;
+  margin-top: 15px;
+}
+.main__list ul{
+  flex: 1 1 auto;
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap:10px;
+}
+.main__list--item {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 410px;
+  height: 298px;
+  background: #282b32;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.main__list--item:nth-child(2), .main__list--item:nth-child(4), .main__list--item:nth-child(6) {
+  background: #4a4b4e;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* кнопка прижмётся вниз блока */
+  height: fit-content; /* очень важно, чтобы высота была ограничена */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.main__list--item img{
+  margin-top: 30px;
+  height: 70px;
+  width: 70px;
+}
+.main__roulette{
+  height: 300px;
+  width: 300px;
+  position:absolute;
+  right: 0;
+  bottom: 150px;
+   animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);   /* начальный угол */
+  }
+  50% {
+    transform: rotate(-360deg); /* полный оборот */
+  }
+  100% {
+    transform: rotate(360deg); /* полный оборот */
   }
 }
