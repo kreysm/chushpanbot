@@ -1,0 +1,435 @@
+
+/*--------------------------------------------------------------*/
+body{
+  cursor: url('/images/cursor/main.png') 4 4, auto;
+}
+a:hover{
+    cursor: url('/images/cursor/body.png') 4 4, auto;
+}
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+  font-family: RobotoSlab, sans-serif;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+  background: rgb(31, 28, 28);
+}
+
+/*============================================================================*/
+.header__top {
+}
+
+.header__top-line2 {
+  max-height: 700px;
+  max-width: 30px;
+  /* например, или по вашей потребности */
+  width: auto;
+}
+
+.header__top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+  gap: 30px;
+}
+
+.logo {}
+
+.logo img {
+  height: 130px;
+  width: auto;
+  transition: all .3s;
+}
+
+.logo:hover img {
+  transform: scale(1.1);
+}
+
+.header__top-number {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__top-numberBut img {
+  height: 23px;
+  width: 23px;
+}
+
+.header__top-numberBut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(53, 51, 51);
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.header__top-numberButton span {
+  white-space: nowrap;
+  transition: all .3s;
+}
+
+.header__top-numberButton span:hover {
+  color: rgb(233, 167, 24);
+}
+
+.header__top-numberBut:hover {
+  transform: scale(1.1);
+}
+
+.header__top-numberButton {
+  font-family: RobotoSlab, sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: beige;
+}
+
+.header__top-numbertext {}
+
+.header__top-geo {}
+
+.header__top-geoButton {
+  font-family: RobotoSlab, sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: beige;
+  transition: all .3s;
+}
+
+.header__top-geoButton img {
+  height: 26px;
+  width: 26px;
+}
+
+.header__top-geoButton span {
+  transition: all .3s;
+}
+
+.header__top-geoButton span:hover {
+  color: rgb(233, 167, 24);
+}
+
+.header__top-geoimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(53, 51, 51);
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.header__top-geoimg:hover {
+  transform: scale(1.1);
+}
+
+.header__top-geotext {}
+
+.header__top-btns {
+  font-family: RobotoSlab, sans-serif;
+  font-weight: 400;
+  font-size: 80%;
+  display: flex;
+  gap: 50px;
+  color: beige;
+  transition: all .3s;
+}
+
+.header__top-buttonVK {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #393c43;
+  border-radius: 40px;
+  width: 204px;
+  height: 60px;
+  transition: all .3s;
+}
+
+.header__top-buttonBron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  width: 204px;
+  height: 60px;
+  background: #fff;
+  color: black;
+  white-space: nowrap;
+  transition: all .3s;
+
+}
+
+.header__top-buttonVK:hover {
+  background: #fff;
+  color: black;
+  white-space: nowrap;
+  transform: scale(1.1);
+}
+
+.header__top-buttonBron:hover {
+  border: 1px solid #393c43;
+  border-radius: 40px;
+  width: 204px;
+  height: 60px;
+  transform: scale(1.1);
+  background: rgb(31, 28, 28);
+  color: #fff;
+}
+
+/*-------------------------------------------------------------------*/
+.header__main {
+  display:flex;
+  align-items:flex-start;
+}
+
+.header__main-subscribe { 
+  flex: 1 1 80%;
+  max-width: 1100px;
+  margin-top: 100px;
+  font-family: RobotoSlab, sans-serif;
+  color: #fff;
+  padding:0px;
+}
+
+.header__main-title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
+.header__main-subtitle {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+}
+
+.header__main-list ul {
+list-style: none;
+padding: 0;
+margin: 0; 
+display: flex;
+gap: 24px; 
+align-items: center;
+justify-content: flex-start;
+margin: 50px 0 50px 0;
+}
+
+.header__main-list .header__main-list-item::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-image: url('../images/ready.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  line-height: 40px;
+}
+.header__main-list-item:{
+
+}
+
+.header__main-button {
+  display:flex;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 60px;
+  width: 277px;
+  height: 70px;
+  background: linear-gradient(141deg, #6d261b 0%, #f69020 47.92%, #9c7b16 100%);
+  color:black;
+  transition: all .3s;
+}
+.header__main-button:hover{
+  transform: scale(1.05);
+}
+
+.header__main-photozone {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kirill-photo{
+  position:relative;
+  height: 800px;
+  width: 500px;
+  z-index:10;
+}
+.header__main-photozoneSub{
+  font-family: RobotoSlab, sans-serif;
+  font-weight: 700;
+  color:#fff;
+}
+.chushpan-photo{
+  position:absolute;
+  z-index:0;
+  height: 600px;
+  opacity:0.1;
+  top:170px;
+}
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* чтобы убрать подчеркивание если это ссылка */
+  /* Можно задать padding, фон и т.д., например: */
+  padding: 6px;
+}
+.photozone-music {
+  display: flex;           
+  align-items: center;     
+  gap: 12px;               
+}
+.music-added img{
+
+  height: 25px;
+  width: 25px;
+}
+.music-added{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(53, 51, 51);
+  border-radius:40px;
+  position:fixed;
+  right: 40px;        
+  bottom: 40px;       
+  z-index: 1000;      
+  animation: move 1s alternate infinite; 
+}
+
+
+@keyframes move{
+  0%{
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+
+/*-------------------------------------------------------------*/
+.main .container {
+  padding-top: 90px;
+  min-height:100vh;
+}
+.main {
+  background-color: #242527;
+  display: flex;
+  justify-content: space-between;
+}
+.buttonlist{
+  padding-top: 90px;
+  display: flex;          
+  flex-direction: row;    
+  align-items: flex-start; 
+  gap: 20px;         
+  position: relative;     
+}
+.main__title {
+font-weight: 700;
+font-size: 75px;
+line-height: 109%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+}
+.main__subtitle {
+  line-height: 109%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 35px;
+  margin-top: 15px;
+}
+.main__list ul{
+  flex: 1 1 auto;
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap:10px;
+}
+.main__list--item {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 410px;
+  height: 298px;
+  background: #282b32;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.main__list--item:nth-child(2), .main__list--item:nth-child(4), .main__list--item:nth-child(6) {
+  background: #4a4b4e;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* кнопка прижмётся вниз блока */
+  height: fit-content; /* очень важно, чтобы высота была ограничена */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.main__list--item img{
+  margin-top: 30px;
+  height: 70px;
+  width: 70px;
+}
+.main__roulette{
+  height: 300px;
+  width: 300px;
+  position:absolute;
+  right: 0;
+  bottom: 150px;
+   animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);   /* начальный угол */
+  }
+  50% {
+    transform: rotate(-360deg); /* полный оборот */
+  }
+  100% {
+    transform: rotate(360deg); /* полный оборот */
+  }
+}
