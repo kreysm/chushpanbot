@@ -1,10 +1,10 @@
 
 /*--------------------------------------------------------------*/
 body{
-  cursor: url('/images/cursor/main.png') 4 4, auto;
+  cursor: url('../images/cursor/main.png') 4 4, auto;
 }
 a:hover{
-    cursor: url('/images/cursor/body.png') 4 4, auto;
+    cursor: url('../images/cursor/body.png') 4 4, auto;
 }
 .wrapper {
   min-height: 100%;
