@@ -233,14 +233,14 @@ a:hover{
 }
 
 .header__main-list ul {
-list-style: none;
-padding: 0;
-margin: 0; 
-display: flex;
-gap: 24px; 
-align-items: center;
-justify-content: flex-start;
-margin: 50px 0 50px 0;
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  display: flex;
+  gap: 24px; 
+  align-items: center;
+  justify-content: flex-start;
+  margin: 50px 0 50px 0;
 }
 
 .header__main-list .header__main-list-item::before {
@@ -283,22 +283,16 @@ margin: 50px 0 50px 0;
 }
 
 .kirill-photo{
-  position:relative;
   height: 800px;
   width: 500px;
   z-index:10;
-}
-.header__main-photozoneSub{
-  font-family: RobotoSlab, sans-serif;
-  font-weight: 700;
-  color:#fff;
+  justify-self: center;
+  transition: justify-self 0.3s ease;
 }
 .chushpan-photo{
-  position:absolute;
   z-index:0;
   height: 600px;
   opacity:0.1;
-  top:170px;
 }
 .custom-button {
   display: inline-flex;
@@ -308,10 +302,16 @@ margin: 50px 0 50px 0;
   /* Можно задать padding, фон и т.д., например: */
   padding: 6px;
 }
-.photozone-music {
-  display: flex;           
+.photozone{
+  display: grid;           
   align-items: center;     
-  gap: 12px;               
+  gap: 12px;      
+  min-width: 430px;         
+}
+.photozone img{
+  grid-area: 1 / 1;
+  width: 100%;
+  height: auto;               
 }
 .music-added img{
 
@@ -359,8 +359,7 @@ margin: 50px 0 50px 0;
   display: flex;          
   flex-direction: row;    
   align-items: flex-start; 
-  gap: 20px;         
-  position: relative;     
+  gap: 20px;              
 }
 .main__title {
 font-weight: 700;
@@ -377,6 +376,14 @@ color: #fff;
   color: #fff;
   font-size: 35px;
   margin-top: 15px;
+}
+.main__list{
+  flex: 1 1 auto; /* занимает доступное пространство */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  width: auto;
 }
 .main__list ul{
   flex: 1 1 auto;
@@ -404,14 +411,22 @@ color: #fff;
 .no-wrap{
  white-space: nowrap;
 }
+.buttonrol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px; /* или 100% высоты родителя */
+}
+.buttonlist{
+  justify-content: center;
+  align-items: center;
+}
 .button {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* кнопка прижмётся вниз блока */
-  height: fit-content; /* очень важно, чтобы высота была ограничена */
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  justify-content: flex-end; 
+  height: fit-content; 
 }
 .main__list--item img{
   margin-top: 30px;
@@ -419,11 +434,9 @@ color: #fff;
   width: 70px;
 }
 .main__roulette{
+
   height: 300px;
   width: 300px;
-  position:absolute;
-  right: 0;
-  bottom: 150px;
   animation: rotate 4s linear infinite;
 }
 
@@ -461,7 +474,12 @@ color: #fff;
   align-items: flex-start; /* выравнивание по левому краю */
   }
 }
-@media (max-width:480px){
+@media (max-width:742px){
+  .photozone{
+    transform:scale(0.9);
+    transform: translateX(-10%);
+    z-index:0;
+  }
   .header__main-title{
     font-size: 18px;
   }
@@ -470,13 +488,110 @@ color: #fff;
   }
   .header__main-subscribe{
     max-width: 250px;
+    z-index:1;
   }
   .header__main-list-item{
     font-size: 14px;
   }
-  .header__main-photozone{
-    
+}
+@media (max-width:542px){
+  .photozone{
+    transform: translateX(-50%);
+    z-index:0;
+  }
+  .header__main-title{
+    font-size: 18px;
+  }
+  .header__main-subtitle{
+    font-size: 14px;
+  }
+  .header__main-subscribe{
+    max-width: 250px;
+    z-index:1;
+  }
+  .header__main-list-item{
+    font-size: 14px;
+  }
+}
+@media (max-width:410px){
+  .photozone{
+    transform: translateX(-90%);
+    z-index:0;
+  }
+}
+@media (max-width:1600px){
+  .main__list--item{
+    width: 350px;
+  }
+}
+@media (max-width:1395px){
+  .main__list--item{
+    width: 300px;
+  }
+}
+@media (max-width:1000px){
+   .main-list{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .buttonlist{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__list--item{
+    width: 45%;
+    font-size:10px;
+  }
+  .buttonrol{
+    transform: scale(0.7);
+  }
+}
+@media (max-width:720px){
+  .main-list{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .buttonlist{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__list--item{
+    width: 45%;
+    font-size:10px;
+  }
+  .buttonrol{
     transform: scale(0.5);
-
+  }
+  .main__title{
+    font-size:30px;
+  }
+  .main__title{
+    font-size:30px;
+  }
+}
+@media (max-width:320px){
+  .main-list{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .buttonlist{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main__list--item{
+    width: 45%;
+    font-size:10px;
+  }
+  .buttonrol{
+    transform: scale(0.5);
+  }
+  .main__title{
+    font-size:12px;
+  }
+  .main__subtitle{
+    font-size:12px;
   }
 }
