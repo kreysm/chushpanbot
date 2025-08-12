@@ -35,7 +35,6 @@ a:hover{
 .header__top-line2 {
   max-height: 700px;
   max-width: 30px;
-  /* например, или по вашей потребности */
   width: auto;
 }
 
@@ -298,8 +297,7 @@ a:hover{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* чтобы убрать подчеркивание если это ссылка */
-  /* Можно задать padding, фон и т.д., например: */
+  text-decoration: none; 
   padding: 6px;
 }
 .photozone{
@@ -378,7 +376,7 @@ color: #fff;
   margin-top: 15px;
 }
 .main__list{
-  flex: 1 1 auto; /* занимает доступное пространство */
+  flex: 1 1 auto; 
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -416,7 +414,7 @@ color: #fff;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 300px; /* или 100% высоты родителя */
+  height: 300px; 
 }
 .buttonlist{
   justify-content: center;
@@ -442,13 +440,13 @@ color: #fff;
 
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);   /* начальный угол */
+    transform: rotate(0deg);  
   }
   50% {
-    transform: rotate(-360deg); /* полный оборот */
+    transform: rotate(-360deg);
   }
   100% {
-    transform: rotate(360deg); /* полный оборот */
+    transform: rotate(360deg); 
   }
 }
 /*--------------------------------------- MEDIA -----------------------------------------*/
@@ -471,7 +469,7 @@ color: #fff;
     display: flex;
   flex-direction: column;  
   gap: 10px;            
-  align-items: flex-start; /* выравнивание по левому краю */
+  align-items: flex-start; 
   }
 }
 @media (max-width:742px){
