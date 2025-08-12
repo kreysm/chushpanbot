@@ -13,7 +13,7 @@ a:hover{
 }
 
 .container {
-  max-width: 1260px;
+  max-width: 1600px;
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
@@ -424,7 +424,7 @@ color: #fff;
   position:absolute;
   right: 0;
   bottom: 150px;
-   animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
 }
 
 @keyframes rotate {
