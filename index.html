@@ -11,18 +11,19 @@
 </head>
 <body>
   <div class="wrapper">
-  <header class="header">
-    <a href="" class="burger">
-      <span></span>
-    </a>
-    <div class="header__top">
+   <div class="overlay"></div>
+    <header class="header">
+      <a class="burger burger--follow" href="#">
+        <span></span>
+      </a>
+    <div class="header__top header__top--open">
       <div class="container">
         <div class="header__top-inner">
           <div class="logo">
           <a class="logolink" href="https://vk.com/club231277727" target="_blank">
             <img src="images/logo-Photoroom.png" alt="logo"></a>
           </div>
-          <div class="header__top-number">
+          <div class="header__top-number number">
             <a href="tel:+79141395288" class="header__top-numberButton">
               <div class="header__top-numberBut">
               <img src="images/phone.svg" alt="phone icon">
@@ -31,7 +32,7 @@
             </a>
             <div class="header__top-numbertext"></div>
           </div>
-        <div class="header__top-geo">
+        <div class="header__top-geo geo">
           <a class="header__top-geoButton" href="https://go.2gis.com/WWKsv" target="_blank">
             <div class="header__top-geoimg">
             <img src="images/geo.svg" alt="geo icon">
@@ -49,6 +50,7 @@
     <div class="container">
     <div class="header__main">
       <div class="header__main-subscribe">
+      <a href="update.html" class="header__main-update" target="_blank">У НАС ВЫШЛО ОБНОВЛЕНИЕ - НАЖМИ НА МЕНЯ</a>
       <div class="header__main-title">ДОБАВЬ НАШЕГО МНОГОФУНКЦИОНАЛЬНОГО БОТА К СЕБЕ В БЕСЕДУ</div>
       <div class="header__main-subtitle">УСПЕЙ ДОБАВИТЬ БОТА ПОКА ОН БЕСПЛАТНЫЙ</div>
       <div class="header__main-list">
@@ -83,40 +85,55 @@
       <div class="main__subtitle">Почему стоит добавить бота</div>
       <div class="buttonlist">
         <div class="main__list">
-          <ul>
-            <li class="main__list--item">
-              Никакой цензуры
-              <img src="images/main__ul/1.png" alt="">
-            </li>
-            <li class="main__list--item">
-              <span>Настоящая</span> русская рулетка
-              <img src="images/main__ul/2.png" alt="">
-            </li>
-            <li class="main__list--item">Прогноз погоды
-              <img src="images/main__ul/3.png" alt="">
-            </li>
-            <li class="main__list--item">Полная анонимность
-              <img src="images/main__ul/4.png" alt="">
-            </li>
-            <li class="main__list--item"><span>Лучшие анекдоты</span> современности
-              <img src="images/main__ul/5.png" alt="">
-            </li>
-            <li class="main__list--item"><span>Любая музыка</span> на ваш вкус
-              <img src="images/main__ul/6.png" alt="">
-            </li>
-          </ul>
-        </div>
-        <div class="buttonrol">
-          <img class="main__roulette" src="images/roullete/roulette.png" alt="">
+          <div class="main__list-item">
+          <div class="main__list-itemtext">
+            Никакой цензуры
+          </div>
+            <img src="images/main__ul/1.png" alt="">
+          </div>
+          <div class="main__list-item">
+          <div class="main__list-itemtext">
+            Настоящая русская рулетка
+          </div>
+            <img src="images/main__ul/2.png" alt="">
+          </div>
+          <div class="main__list-item">
+          <div class="main__list-itemtext">
+            Прогноз погоды на каждый день
+          </div>
+            <img src="images/main__ul/3.png" alt="">
+          </div>
+          <div class="main__list-item">
+          <div class="main__list-itemtext">
+            Полная анонимность
+          </div>
+            <img src="images/main__ul/4.png" alt="">
+          </div>
+          <div class="main__list-item">
+          <div class="main__list-itemtext">
+            Самые свежие анекдоты
+          </div>
+            <img src="images/main__ul/5.png" alt="">
+          </div>
+          <div class="main__list-item">
+          <div class="main__list-itemtext">
+            Своя любимая музыка
+          </div>
+            <img src="images/main__ul/6.png" alt="">
+          </div>
           <div class="button">
           <a href="https://vk.com/app6441755_-231277727?ref=group_menu" class="header__main-button-link map"><div class="header__main-button">ДОБАВИТЬ БОТА В БЕСЕДУ</div></a>
         </div>
+        </div>
+        <div class="buttonrol">
+          <img class="main__roulette" src="images/roullete/roulette.png" alt="">
         </div>
       </div>
       </div>
   </main>
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
