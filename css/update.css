@@ -58,9 +58,7 @@ a:hover{
   display:flex;
   align-items: center;
   justify-content: center;
-  max-width: 1200px; /* ширина меньше контейнера */
-  margin-left: 100px; /* отступ слева */
-
+  max-width: 1200px;
 }
 .header__updateOne-cards {
   width: 400px;
@@ -101,6 +99,7 @@ a:hover{
 /*-----------------------------------------------------------------------------*/
 .header_updateOne-subscribe {
   color: white;
+  text-align: center;
 }
 .header_updateOne-subscribe ul{
   gap: 10px
@@ -143,4 +142,20 @@ a:hover{
 }
 .underline{
   text-decoration: line-through;
+}
+
+/*---------------------------------------------------------------------*/
+@media (max-width: 800px) {
+  .header__updateOne{
+    flex-direction: column;
+  }
+  .header_updateOne-subscribe{
+    margin-top: 50px;
+  }
+  .header__updateOne-cards{
+    padding-left: 100px;
+  }
+  .header__titles-title{
+    font-size: 20px;
+  }
 }
