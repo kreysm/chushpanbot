@@ -164,10 +164,11 @@ a:hover{
 
 .anim-casino{
   position:absolute;
-  max-height: 350px;
+  max-height: 400px;
   max-width: 350px;
   index: 10;
-  right: -4px;
+  right: 0px;
+  top: 5px;
   animation: rotate 5s linear infinite;
   float: right;
 }
