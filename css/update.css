@@ -171,6 +171,7 @@ a:hover{
   top: 5px;
   animation: rotate 5s linear infinite;
   float: right;
+  transform-origin: center;
 }
 .updateTwo{}
 .updateTwo-Roulette{
