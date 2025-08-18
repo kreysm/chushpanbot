@@ -25,3 +25,23 @@ $('.burger, .overlay').on('click', function(e) {
     $('.overlay').addClass('overlay--show');
   }
 });
+
+const dropbtn = document.querySelector('.dropbtn');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+dropbtn.addEventListener('mouseenter', () => {
+  dropdownContent.style.display = 'block';
+});
+
+dropbtn.addEventListener('mouseleave', () => {
+  // Используем задержку, чтобы меню не исчезало сразу, если курсор попадает на список
+  setTimeout(() => {
+    if (!dropdownContent.matches(':hover')) {
+      dropdownContent.style.display = 'none';
+    }
+  }, 100);
+});
+
+dropdownContent.addEventListener('mouseleave', () => {
+  dropdownContent.style.display = 'none';
+});

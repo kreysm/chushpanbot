@@ -19,7 +19,7 @@ a:hover{
   font-family: RobotoSlab, sans-serif;
 }
 .header {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: url("../images/decor/shapes-bg.svg") 50% 10% / cover no-repeat, linear-gradient(rgb(44, 34, 34), rgb(19, 18, 18));
 }
@@ -35,7 +35,7 @@ a:hover{
 
 /*-----------------------------------------------------------------*/
 
-.header__titles {
+.header__titles, .title {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@ a:hover{
 }
 .dropdown {
   margin-top: 10px;
-  display: block;
+  display: inline-block;
 }
 .dropbtn {
   display: inline-block;
@@ -135,6 +135,7 @@ a:hover{
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   border-radius: 4px;
+  text-transform: uppercase;
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {
@@ -143,9 +144,72 @@ a:hover{
 .underline{
   text-decoration: line-through;
 }
+.updateTwo-titles-title{
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: overline;
+}
+.updateTwo-titles-subtitle{
+  font-size: 25px;
+  margin-top: 10px;
+}
+.updateTwo-titles{
+  margin-top:150px;
+}
 
+.casino{
+  max-height: 350px;
+  max-width: 350px;
+}
+
+.anim-casino{
+  position:absolute;
+  max-height: 350px;
+  index: 10;
+  right: -4px;
+  animation: rotate 5s linear infinite;
+  float: right;
+}
+.updateTwo{}
+.updateTwo-Roulette{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 100px 0px 15px 0;
+  margin-left: auto;
+}
+.updateTwo-subscribe{
+  margin-right: 10rem;
+}
+.header_updateTwo-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align:center;
+  margin-bottom: 15px;
+  text-transform: none;
+}
+
+.header__top-list{
+  text-align: center;
+  gap: 10px;
+  text-transform: none;
+}
+.header__top-list ul > li{
+  margin-bottom: 15px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);  
+  }
+  50% {
+    transform: rotate(-200deg);
+  }
+  100% {
+    transform: rotate(360deg); 
+  }
+}
 /*---------------------------------------------------------------------*/
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   .header__updateOne{
     flex-direction: column;
   }
@@ -156,6 +220,43 @@ a:hover{
     padding-left: 100px;
   }
   .header__titles-title{
+    font-size: 20px;
+  }
+  .updateTwo-Roulette{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .updateTwo-subscribe {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    order: 2;
+    margin: 0 auto;
+  }
+  .header_updateTwo-title{
+    margin-top: 20px;
+  }
+  .roullete.img{
+    order: 1;
+    position: relative;
+  }
+  .anim-casino{
+    position: absolute;
+    top: 3px;
+    right: 93px;
+  }
+  .updateTwo-Roulette{
+    margin-top: 50px;
+  }
+  .updateTwo-titles-subtitle{
+    font-size: 25px;
+  }
+  .updateTwo-titles-title{
     font-size: 20px;
   }
 }
